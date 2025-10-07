@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Create appointment</title>
+</head>
+<body>
+  <h1>Create appointment</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Book & Pay (test)</button>
+  </form>
+  <p>Test card: <strong>4242 4242 4242 4242</strong> — any future expiry / any CVC (Stripe test).</p>
+</body>
+</html>
